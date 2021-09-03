@@ -465,11 +465,11 @@ button:hover {
 #run {
   background-image: url("/assets/hobbies/jog.png");
 }
-#tv {
-  background-image: url("/assets/hobbies/tv.png");
-}
 #hp {
-  background-image: url("/assets/hobbies/hp.png");
+  background-image: url("/assets/hobbies/pillar.png");
+}
+#tv {
+  background-image: url("/assets/hobbies/hiking.png");
 }
 #book {
   background-image: url("/assets/hobbies/book.png");
