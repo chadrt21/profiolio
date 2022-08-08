@@ -49,13 +49,13 @@ const navSlide = () => {
 navSlide();
 
 // index of each deck, initialized to first slide for each deck
-let slideIndex = [1, 1, 1];
+let slideIndex = [1, 1];
 
-let slideId = ["recipixSlides", "raceSlides", "botSlides"];
-let dotId = ["recipixDots", "raceDots", "botDots"];
+let slideId = ["recipixSlides", "minmaxdndSlides"];
+let dotId = ["recipixDots", "minmaxdndDots"];
 showSlides(1, 0);
 showSlides(1, 1);
-showSlides(1, 2);
+// showSlides(1, 2);
 
 // Next/previous controls
 function plusSlides(n, no) {
@@ -91,4 +91,6 @@ function showSlides(n, no) {
 let date = new Date();
 let year = date.getFullYear();
 let yearSpan = document.getElementById("year");
-yearSpan.textContent = year;
+yearSpan.innerHTML = year.toString();
+// console.log('year:',year)
+// yearSpan.innerHTML += year;

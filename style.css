@@ -298,7 +298,7 @@ p {
   padding-top: 50px;
 }
 
-#racehopper,
+#minmaxdnd,
 #botbuddies {
   padding-top: 85px;
 }
@@ -329,7 +329,7 @@ p {
 #skillsDiv,
 #hobbies,
 #recipix,
-#racehopper,
+#minmaxdnd,
 #botbuddies,
 #resume {
   display: flex;
@@ -563,7 +563,7 @@ button:hover {
 
 /* Hide the images by default */
 .recipixSlides,
-.raceSlides,
+.minmaxdndSlides,
 .botSlides {
   display: none;
 }
@@ -583,18 +583,20 @@ button:hover {
   background-image: url("/assets/recipix/recipixslide-2.png");
   background-size: contain;
 }
-/* #recipixslide3 {
-  background-image: url("/assets/recipix/recipixslide3.png");
+#minmaxdndslide1 {
+  background-image: url("/assets/minmaxdnd/minmaxdndslide1.jpeg");
   background-size: contain;
-}
-#recipixslide4 {
-  background-image: url("/assets/recipix/recipixslide4.png");
-  background-size: contain;
-}
-#recipixslide5 {
-  background-image: url("/assets/recipix/recipixteam.JPG");
 }
 
+#minmaxdndslide2 {
+  background-image: url("/assets/minmaxdnd/minmaxdndslide-1.PNG");
+  background-size: contain;
+}
+
+#minmaxdndslide3 {
+  background-image: url("/assets/minmaxdnd/minmaxdndslide-2.PNG");
+  background-size: contain;
+}
 
 /* Next & previous buttons */
 .prev,
@@ -639,7 +641,7 @@ button:hover {
 
 /* The dots/bullets/indicators */
 .recipixDots,
-.raceDots,
+.minmaxdndDots,
 .botDots {
   cursor: pointer;
   height: 15px;
@@ -654,7 +656,7 @@ button:hover {
 
 .active,
 .recipixDots:hover,
-.raceDots:hover,
+.minmaxdndDots:hover,
 .botDots:hover {
   background-color: #fa9f30;
 }
@@ -813,7 +815,7 @@ footer {
   }
 
   #recipix,
-  #racehopper,
+  #minmaxdnd,
   #botbuddies {
     width: 100%;
   }
