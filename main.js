@@ -92,5 +92,3 @@ let date = new Date();
 let year = date.getFullYear();
 let yearSpan = document.getElementById("year");
 yearSpan.innerHTML = year.toString();
-// console.log('year:',year)
-// yearSpan.innerHTML += year;
