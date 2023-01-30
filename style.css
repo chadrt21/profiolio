@@ -25,6 +25,7 @@ nav {
   width: 100%;
   max-width: 100vw;
   z-index: 10000;
+  padding-left: 20px;  // Make room for logo
 }
 
 .nav-links {
@@ -108,6 +109,7 @@ h3 {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 
 #projectButton {
   margin-top: 50px;
@@ -203,6 +205,7 @@ h3 {
   height: 30px;
 }
 
+
 /* CSS Hexagons?: https://codepen.io/imohkay/pen/ZGbmoQ */
 
 .hexagon {
@@ -246,6 +249,7 @@ h3 {
   bottom: -17.6777px;
   border-bottom: solid 5.6569px #333333;
   border-left: solid 5.6569px #333333;
+  /* right: 50px; */
 }
 
 .hexagon:hover {
@@ -265,6 +269,13 @@ h3 {
   border-bottom-right-radius: 30%;
   border-top-left-radius: 30%;
   transition: all 0.3s ease;
+}
+
+#logo img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
 }
 
 #logo:hover {
@@ -379,6 +390,10 @@ a:active {
   align-content: center;
 }
 
+#seh2 {
+  min-height: 77px;
+}
+
 #projects {
   width: 100%;
 }
@@ -421,8 +436,8 @@ button:hover {
   background-position: center;
   background-size: cover;
   margin: 60px;
-  filter: grayscale(1);
-  transition: all 1s ease;
+  /*filter: grayscale(1);*/
+  /*transition: all 1s ease;*/
   border: 5px solid #333333;
 }
 

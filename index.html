@@ -2,7 +2,25 @@
 <html lang="en">
 
 <head>
+  <!-- Primary Meta Tags -->
   <title>Chad Ross</title>
+  <meta name="title" content="Chad Ross">
+  <meta name="description" content="Full Stack Software Developer/Engineer">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chadross.dev/">
+  <meta property="og:title" content="Chad Ross">
+  <meta property="og:description" content="Full Stack Software Developer/Engineer">
+  <meta property="og:image" content="header.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://chadross.dev/">
+  <meta property="twitter:title" content="Chad Ross">
+  <meta property="twitter:description" content="Full Stack Software Developer/Engineer">
+  <meta property="twitter:image" content="header.png">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,14 +31,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
   <nav>
 
-    <a href="#top" class="hexagon">
-      C
-    </a>
+    <a href="#top" class="hexagon">C</a>
+
+    <!-- <a><img scr="logo.png" href="#top" class="logo"></a> -->
 
     <ul class="nav-links">
 
@@ -45,8 +65,50 @@
         data-aos="fade-up">
         Chad Ross.</h1>
       <h2 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
+          data-aos="fade-up"></h2>
+      <h2 id="seh3" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600"
         data-aos="fade-up">
-        I'm a software engineer.</h2>
+        <script>
+        var str = ['I\'m a full stack software engineer',
+        'I\'m a full stack software engineer^1000\\n' +
+        'I\'m a full stack software developer^1000\\n' +
+        'I\'m a computer scientist^1000\\n' +
+        'I\'m a IT technician^1000\\n' +
+        'I\'m a problem solver^1000\\n'];
+        // Set div to length of the longest string
+        // var longest = str.reduce((a,b) => a.length > b.length ? a : b);
+        // document.getElementById('top').style.width=(longest.length*35);
+        // console.log('Longest string: ' + longest.length);
+        var typed1 = new Typed('#seh2', {
+          strings: ['I\'m a full stack software engineer',
+          'I\'m a full stack software engineer',
+          'I\'m a full stack software developer'],
+          smartBackspace: true, // Default value
+          typeSpeed: 70,
+          backSpeed: 70,
+          backDelay: 2000,
+          // loop: true,
+          // cursorChar: "/",
+          // autoInsertCss: false,
+          showCursor: false,
+          loop: false
+        });
+
+        var typed2 = new Typed('#seh3',{
+          strings: [ 'I\'m also a computer scientist',
+          'I\'m also a computer scientist',
+          'I\'m also a IT technician',
+          'I\'m a problem solver'],
+          typeSpeed: 70,
+          backSpeed: 70,
+          showCursor: false,
+          backDelay: 3000,
+          startDelay: 7000,
+        });
+
+        </script>
+      </h2>
+
     </div>
     <div data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600" data-aos="fade-up"
       id="projectButton">
