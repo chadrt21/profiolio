@@ -13,6 +13,8 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Lato", sans-serif;
+  /*display: grid;*/
+  /*place-items: center;*/
 }
 
 nav {
@@ -131,7 +133,7 @@ h3 {
   font-size: 1.3rem;
   font-weight: bold;
   border: 4px solid #333333;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   background-color: white;
   transition: background-color 0.3s ease 0s;
 }
@@ -141,7 +143,7 @@ h3 {
 .btn-box button {
   font-size: 0.8rem;
   border: 2px solid #333333;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   margin-left: 20px;
   margin-right: 0px;
   text-transform: uppercase;
@@ -204,6 +206,112 @@ h3 {
   width: 30px;
   height: 30px;
 }
+/*Card slid: https://codepen.io/lyon-etyo/pen/OJmyMGd */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*text-align: center;*/
+  /*min-height: 100vh;*/
+}
+
+.container {
+  /*border: 5px solid;*/
+  display: flex;
+  justify-content: center;
+  /*max-width: 1200px;*/
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.card img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  /*border-radius: 1em;*/
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  text-wrap: normal;
+  overflow-wrap: anywhere;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  /*border-radius: 1em;*/
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+.tag-yellow {
+  background: #FFD400;
+  /*background: linear-gradient(to bottom, #FFD400, #FFEA61);*/
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  /*border-radius: 50%;*/
+}
+
+.user__info > small {
+  color: #666;
+}
 
 
 /* CSS Hexagons?: https://codepen.io/imohkay/pen/ZGbmoQ */
@@ -249,12 +357,12 @@ h3 {
   bottom: -17.6777px;
   border-bottom: solid 5.6569px #333333;
   border-left: solid 5.6569px #333333;
-  /* right: 50px; */
+   right: 50px;
 }
 
-.hexagon:hover {
-  background-color: #fa9f30;
-}
+/*.hexagon:hover {*/
+/*  background-color: #fa9f30;*/
+/*}*/
 
 
 #logo {
@@ -299,6 +407,7 @@ p {
 }
 
 #aboutMeTitle,
+#blogTitle,
 #projectsTitle,
 #resumeTitle,
 #contactTitle {
@@ -428,9 +537,12 @@ button:hover {
 #selfpic {
   width: 320px;
   height: 320px;
-  border-top-left-radius: 30%;
-  border-bottom-right-radius: 30%;
-  background-image: url("/assets/portpic.png");
+  /*transform: skew(20deg);*/
+  /*border-radius: 50%;*/
+  /*border-top-left-radius: 30%;*/
+  /*border-bottom-right-radius: 30%;*/
+  background-image: url("/assets/portpicOld.png");
+  /*background-image: url("/assets/portpic.jpg");*/
   background-color: #1b1c1c;
   background-repeat: no-repeat;
   background-position: center;
@@ -441,11 +553,11 @@ button:hover {
   border: 5px solid #333333;
 }
 
-#selfpic:hover {
-  filter: grayscale(0);
-  background-color: #fa9f30;
-  transition: all 0.3s ease;
-}
+/*#selfpic:hover {*/
+/*  filter: grayscale(0);*/
+/*  background-color: #fa9f30;*/
+/*  transition: all 0.3s ease;*/
+/*}*/
 
 #hobbiesPics {
   display: flex;
@@ -921,6 +1033,16 @@ footer {
     transform: translateX(0%);
   }
 
+  .center-screen {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   #projectButton a {
     padding: 12px;
     font-size: 1.1rem;
@@ -1063,3 +1185,5 @@ footer {
     background-color: #333333;
   }
 }
+
+
