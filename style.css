@@ -113,20 +113,24 @@ h3 {
 }
 
 
-#projectButton {
+#projectButton,
+#upworkButton {
   margin-top: 50px;
 }
 
 .projectLinks,
-#resumeMain {
+#resumeMain,
+#contactMain {
   width: 800px;
   display: flex;
   flex-direction: row;
 }
 
 #projectButton a,
+#upworkButton a,
 .projectLinks a,
 #resumeMain a,
+#contactMain a,
 .btn-box button {
   color: #333333;
   padding: 15px;
@@ -140,6 +144,7 @@ h3 {
 
 .projectLinks a,
 #resumeMain a,
+#contactMain a,
 .btn-box button {
   font-size: 0.8rem;
   border: 2px solid #333333;
@@ -153,12 +158,14 @@ h3 {
   padding-right: 12px;
 }
 
-#resumeMain {
+#resumeMain,
+#contactMain {
   justify-content: center;
   margin-top: 20px;
 }
 
-#resumeMain a {
+#resumeMain a,
+#contactMain a{
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -175,8 +182,10 @@ h3 {
 }
 
 #projectButton a:hover,
+#upworkButton a:hover,
 .projectLinks a:hover,
 #resumeMain a:hover,
+#contactMain a:hover,
 .btn:hover {
   background-color: #fa9f30;
 }
@@ -194,7 +203,8 @@ h3 {
   margin-left: 5px;
 }
 
-#resumeMain a img {
+#resumeMain a img,
+#contactMain a img {
   width: 19px;
   height: 19px;
   position: relative;
@@ -418,6 +428,7 @@ p {
   padding-top: 50px;
 }
 
+#stonk,
 #minmaxdnd,
 #botbuddies {
   padding-top: 85px;
@@ -448,6 +459,7 @@ p {
 
 #skillsDiv,
 #hobbies,
+#stonk,
 #recipix,
 #minmaxdnd,
 #botbuddies,
@@ -689,6 +701,7 @@ button:hover {
 }
 
 /* Hide the images by default */
+.stonkSlides,
 .recipixSlides,
 .minmaxdndSlides,
 .botSlides {
@@ -724,6 +737,21 @@ button:hover {
   background-image: url("/assets/minmaxdnd/minmaxdndslide-2.PNG");
   background-size: contain;
 }
+#stonkslide1 {
+  background-image: url("/assets/minmaxdnd/minmaxdndslide-2.PNG");
+  background-size: contain;
+}
+
+#stonkslide2 {
+  background-image: url("/assets/minmaxdnd/minmaxdndslide-2.PNG");
+  background-size: contain;
+}
+
+#stonkslide3 {
+  background-image: url("/assets/minmaxdnd/minmaxdndslide-2.PNG");
+  background-size: contain;
+}
+
 
 /* Next & previous buttons */
 .prev,
@@ -767,6 +795,7 @@ button:hover {
 }
 
 /* The dots/bullets/indicators */
+.stonkDots,
 .recipixDots,
 .minmaxdndDots,
 .botDots {
@@ -782,6 +811,7 @@ button:hover {
 }
 
 .active,
+.stonkDots:hover,
 .recipixDots:hover,
 .minmaxdndDots:hover,
 .botDots:hover {
@@ -903,6 +933,10 @@ footer {
   align-items: center;
 }
 
+#copyright {
+  margin-bottom: 20px;
+}
+
 #footer-links {
   display: flex;
   flex-direction: row;
@@ -941,6 +975,7 @@ footer {
     margin: auto;
   }
 
+  #stonk,
   #recipix,
   #minmaxdnd,
   #botbuddies {
@@ -970,13 +1005,15 @@ footer {
   }
 
   .projectLinks,
-  #resumeMain {
+  #resumeMain,
+  #contactMain {
     width: 100%;
     flex-wrap: wrap;
   }
 
   .projectLinks a,
-  #resumeMain a {
+  #resumeMain a,
+  #contactMain a {
     margin-bottom: 15px;
   }
 }
@@ -1043,7 +1080,8 @@ footer {
     flex-wrap: wrap;
   }
 
-  #projectButton a {
+  #projectButton a,
+  #upworkButton a {
     padding: 12px;
     font-size: 1.1rem;
     border: 3px solid #333333;
