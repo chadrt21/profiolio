@@ -114,7 +114,7 @@ h3 {
 
 
 #projectButton,
-#upworkButton {
+#upworkMainButton {
   margin-top: 50px;
 }
 
@@ -127,11 +127,22 @@ h3 {
   gap: 5px;
 }
 
+#servicesDiv {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 #projectButton a,
-#upworkButton a,
+#upworkMainButton a,
 .projectLinks a,
 #resumeMain a,
 #contactMain a,
+#servicesDiv a,
 .btn-box button {
   color: #333333;
   padding: 15px;
@@ -146,7 +157,9 @@ h3 {
 .projectLinks a,
 #resumeMain a,
 #contactMain a,
-.btn-box button {
+.btn-box button,
+#servicesDiv a,
+.btn-box a {
   font-size: 0.8rem;
   border: 2px solid #333333;
   /*border-radius: 50px;*/
@@ -163,13 +176,15 @@ h3 {
 }
 
 #resumeMain,
-#contactMain {
+#contactMain,
+#servicesDiv {
   justify-content: center;
   margin-top: 20px;
 }
 
 #resumeMain a,
-#contactMain a {
+#contactMain a,
+#servicesDiv a {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -187,11 +202,20 @@ h3 {
 
 #projectButton a:hover,
 #upworkButton a:hover,
+#upworkMainButton a:hover,
 .projectLinks a:hover,
 #resumeMain a:hover,
 #contactMain a:hover,
-.btn:hover {
+#servicesDiv a:hover,
+.btn:hover,
+.btn-box a:hover {
   background-color: #fa9f30;
+}
+
+#upworkButton {
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
 }
 
 .btn-submit:hover {
@@ -208,7 +232,8 @@ h3 {
 }
 
 #resumeMain a img,
-#contactMain a img {
+#contactMain a img,
+#servicesDiv a img {
   width: 19px;
   height: 19px;
   position: relative;
@@ -220,6 +245,11 @@ h3 {
   width: 30px;
   height: 30px;
 }
+
+#servicesMain li {
+  list-style: square;
+}
+
 /*Card slid: https://codepen.io/lyon-etyo/pen/OJmyMGd */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
@@ -412,6 +442,14 @@ p {
   width: 600px;
 }
 
+#servicesMain p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+
+}
+
 .p-project {
   width: 800px;
 }
@@ -424,7 +462,9 @@ p {
 #blogTitle,
 #projectsTitle,
 #resumeTitle,
-#contactTitle {
+#contactTitle,
+#servicesTitle,
+#techTitle {
   padding-top: 100px;
 }
 
@@ -443,9 +483,9 @@ p {
   font-size: 2.5rem;
 }
 
-#techTitle {
-  padding-bottom: 30px;
-}
+/*#techTitle {*/
+/*  padding-bottom: 30px;*/
+/*}*/
 
 #hobbiesTitle {
   padding-bottom: 10px;
@@ -453,7 +493,8 @@ p {
 
 #aboutMeMain,
 #hobbiesMain,
-#skillsMain {
+#skillsMain,
+#servicesMain {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -475,14 +516,23 @@ p {
   align-items: center;
 }
 
-#aboutMe,
-#skillsDiv {
+#aboutMe {
   padding-bottom: 70px;
 }
 
 #skillsMain {
   flex-direction: row;
   width: 1000px;
+}
+
+#servicesMain p img {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
 }
 
 a {
@@ -1019,7 +1069,8 @@ footer {
 
   .projectLinks a,
   #resumeMain a,
-  #contactMain a {
+  #contactMain a,
+  #servicesDiv a {
     margin-bottom: 15px;
   }
 }
@@ -1060,6 +1111,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
     width: 40%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
@@ -1087,7 +1139,7 @@ footer {
   }
 
   #projectButton a,
-  #upworkButton a {
+  #upworkMainButton a {
     padding: 12px;
     font-size: 1.1rem;
     border: 3px solid #333333;

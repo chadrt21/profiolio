@@ -13,3 +13,9 @@ to = "https://www.linkedin.com/in/chadtross/"
 [[redirects]]
 from = "/LinkedIn"
 to = "https://www.linkedin.com/in/chadtross/"
+
+from = "/upwork"
+to = "https://www.upwork.com/freelancers/~01ecbf6e6ee2174aa6"
+
+from = "/Upwork"
+to = "https://www.upwork.com/freelancers/~01ecbf6e6ee2174aa6"

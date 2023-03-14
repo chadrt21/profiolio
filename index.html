@@ -43,12 +43,13 @@
     <!-- <a><img scr="logo.png" href="#top" class="logo"></a> -->
 
     <ul class="nav-links">
-
+      <li><a href="#aboutMe" id="linkAboutMe">About</a></li>
       <li><a href="#projects" id="linkProjects">Projects</a></li>
 <!--      <li><a href="#blog" id="linkBlog">Blog</a></li>-->
-      <li><a href="#aboutMe" id="linkAboutMe">About</a></li>
-      <li><a href="#resume" id="linkResume">Resume</a></li>
-      <li><a href="#contact" id="linkContact">Hire Me</a></li>
+<!--      <li><a href="#resume" id="linkResume">Resume</a></li>-->
+      <li><a href="#servicesDiv" id="linkServices">Services</a></li>
+      <li><a href="#skillsDiv" id="linkSkill">Skills</a></li>
+      <li><a href="#contact" id="linkContact">Contact</a></li>
       <li><a href="https://github.com/chadrt21" id="linkGithub" target="_blank">Github</a></li>
       <li><a href="https://www.linkedin.com/in/chadtross/" id="linkLinkedIn" target="_blank">LinkedIn</a></li>
     </ul>
@@ -60,61 +61,111 @@
   </nav>
   <div id="top">
     <div id="nameDiv">
-      <h2 id="helloh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="150"
+      <h2 id="helloh2" data-aos-anchor="#top" data-aos-anchor-placment="top-left"  data-aos-delay="150"
         data-aos="fade-up">Hello! My name is </h2>
-      <h1 id="nameh1" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="300"
+      <h1 id="nameh1" data-aos-anchor="#top" data-aos-anchor-placment="top-left"  data-aos-delay="300"
         data-aos="fade-up">
         Chad Ross.</h1>
       <h2 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
           data-aos="fade-up"></h2>
-      <h2 id="seh3" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600"
-        data-aos="fade-up">
+<!--      <h2 id="seh3" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600"-->
+<!--        data-aos="fade-up">-->
         <script>
         // Set div to length of the longest string
         // var longest = str.reduce((a,b) => a.length > b.length ? a : b);
         // document.getElementById('top').style.width=(longest.length*35);
         // console.log('Longest string: ' + longest.length);
         var typed1 = new Typed('#seh2', {
-          strings: ['I\'m a full stack software engineer',
-          'I\'m a full stack software engineer',
-          'I\'m a full stack software developer'],
+          strings: ['I\'m a software engineer',
+          'I\'m a software engineer',
+          'I\'m a software developer',
+          'I\'m a web developer',
+          'I\'m a AI/ML engineer',
+          'I\'m a IT technician',
+          'I\'m a problem solver'],
           typeSpeed: 70,
           backSpeed: 70,
           backDelay: 2000,
           showCursor: false,
-          loop: false
+          loop: true
         });
 
-        var typed2 = new Typed('#seh3',{
-          strings: [ 'I\'m also a computer scientist',
-          'I\'m also a computer scientist',
-          'I\'m also a data scientist',
-          'I\'m also a IT technician',
-          'I\'m also a cybersecurity analyst',
-          'I\'m a problem solver'],
-          typeSpeed: 70,
-          backSpeed: 70,
-          showCursor: false,
-          backDelay: 2500,
-          startDelay: 8000,
-        });
+        // var typed2 = new Typed('#seh3',{
+        //   strings: [ 'I\'m also a computer scientist',
+        //   // 'I\'m also a computer scientist',
+        //   'I\'m also a data scientist',
+        //   'I\'m also a IT technician',
+        //   // 'I\'m also a cybersecurity analyst',
+        //   'I\'m a problem solver'],
+        //   typeSpeed: 70,
+        //   backSpeed: 70,
+        //   showCursor: false,
+        //   backDelay: 2500,
+        //   startDelay: 8000,
+        // });
 
         </script>
       </h2>
 
     </div>
+<!--    <div data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600" data-aos="fade-up"-->
+<!--      id="projectButton">-->
+<!--      <a href="#projects">View Projects</a>-->
+<!--    </div>-->
     <div data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600" data-aos="fade-up"
-      id="projectButton">
-      <a href="#projects">View Projects</a>
-    </div>
-    <div data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600" data-aos="fade-up"
-         id="upworkButton">
+         id="upworkMainButton">
       <a href="#contact">Hire Me</a>
     </div>
   </div>
 <!--  <div>-->
 <!--    -->
 <!--  </div>-->
+
+
+  <div id="aboutMe">
+    <div id="aboutMeTitle" data-aos="fade-up">
+      <h1>About Me</h1>
+    </div>
+
+    <div id="aboutMeMain">
+      <div id="selfpic" data-aos="fade-up"></div>
+
+      <p data-aos="fade-up" id="pIntro">
+        Hi! I’m Chad Ross, a full-stack web developer and software engineer based in Southern California. Having recently graduated from Biola University with a B.S. in Computer Science, I'm ready to take on the world. I love to solve problems either with my existing skill set or trying out new technologies, concepts, and flex my creativity to create amazing memorable things.
+      </p>
+    </div>
+  </div>
+
+  <div id="hobbies">
+    <div id="hobbiesTitle" data-aos="fade-up">
+      <h3>Hobbies & Interests</h3>
+    </div>
+    <div id="hobbiesMain">
+      <div id="hobbiesPics">
+        <div class="hobbiesIcon" id="videogames" data-aos="flip-left" data-aos-anchor="#hobbiesPics"
+             data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="travel" data-aos="flip-left" data-aos-delay="150" data-aos-anchor="#hobbiesPics"
+             data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="climbing" data-aos="flip-left" data-aos-delay="300" data-aos-anchor="#hobbiesPics"
+             data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="run" data-aos="flip-left" data-aos-delay="450" data-aos-anchor="#hobbiesPics"
+             data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="book" data-aos="flip-left" data-aos-delay="600" data-aos-anchor="#hobbiesPics"
+             data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="pillar" data-aos="flip-left" data-aos-delay="750" data-aos-anchor="#hobbiesPics"
+             data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="hike" data-aos="flip-left" data-aos-delay="900" data-aos-anchor="#hobbiesPics"
+             data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="simulation" data-aos="flip-left" data-aos-delay="1050" data-aos-anchor="#hobbiesPics"
+             data-aos-anchor-placment="top-center"></div>
+      </div>
+
+      <p data-aos="fade-up" id="p2">
+        Besides my passion for programming, I love to play video games, specifically FPSs and strategy. I also love to travel,
+        hike, and run. On Thursday you can find me rock climbing or out for a nice long run. I often enjoy running "what if" simulations, wither that be hypothetical economic situations or to figure out the probability of winning Magic: the Gathering with a certain deck or strategy.
+      </p>
+    </div>
+  </div>
 
 
   <div id="projects">
@@ -422,28 +473,39 @@
 <!--            </div>-->
 <!--          </div>-->
 <!--        </div>-->
-      </div>
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+
+  <div id="servicesDiv">
+    <div id="servicesTitle" data-aos="fade-up">
+      <h1>Services</h1>
     </div>
-
-  </div>
-
-  <div id="aboutMe">
-    <div id="aboutMeTitle" data-aos="fade-up">
-      <h1>About Me</h1>
+    <div id="servicesMain" data-aos="fade-up">
+        <p><img src="/assets/web-design.png"/>Custom Website</p>
+        <p><img src="/assets/software-development.png"/>Custom Software</p>
+<!--        <p><img src="/assets/prototype.png"/>Software Prototyping</p>-->
+        <p><img src="/assets/technical-support.png"/>IT Consulting</p>
+        <p><img src="/assets/big-data.png"/>Database Management</p>
+        <p><img src="/assets/machine-learning.png"/>Artificial Intelligence<br>Machine Learning</p>
     </div>
+      <a id="upworkButton" href="https://www.upwork.com/freelancers/~01ecbf6e6ee2174aa6" target="_blank">Hire Me<img src="/assets/upwork.png" />
+      </a>
 
-    <div id="aboutMeMain">
-      <div id="selfpic" data-aos="fade-up"></div>
+<!--    <div id="contactMain" data-aos="fade-up">-->
+<!--      <div class="btn-box" data-aos="fade-up">-->
+<!--        <a id="upworkView" href="https://www.upwork.com/freelancers/~01ecbf6e6ee2174aa6" target="_blank">Hire Me<img src="/assets/upwork.png" />-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
 
-      <p data-aos="fade-up" id="pIntro">
-        Hi! I’m Chad Ross, a full-stack web developer and software engineer based in Southern California. Having recently graduated from Biola University with a B.S. in Computer Science, I'm ready to take on the world. I love to solve problems either with my existing skill set or trying out new technologies, concepts, and flex my creativity to create amazing memorable things.
-      </p>
-    </div>
   </div>
 
   <div id="skillsDiv">
     <div id="techTitle" data-aos="fade-up">
-      <h3>Technologies I've Worked With</h3>
+<!--      <h3>Technologies I've Worked With</h3>-->
+      <h1>Skills</h1>
       <h5 align="center">Hover/click on icons to see tech stack</h5>
     </div>
     <div id="skillsMain">
@@ -666,50 +728,21 @@
     </div>
   </div>
 
-  <div id="hobbies">
-    <div id="hobbiesTitle" data-aos="fade-up">
-      <h3>Hobbies & Interests</h3>
-    </div>
-    <div id="hobbiesMain">
-      <div id="hobbiesPics">
-        <div class="hobbiesIcon" id="videogames" data-aos="flip-left" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="travel" data-aos="flip-left" data-aos-delay="150" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="climbing" data-aos="flip-left" data-aos-delay="300" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="run" data-aos="flip-left" data-aos-delay="450" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="book" data-aos="flip-left" data-aos-delay="600" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="pillar" data-aos="flip-left" data-aos-delay="750" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="hike" data-aos="flip-left" data-aos-delay="900" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="simulation" data-aos="flip-left" data-aos-delay="1050" data-aos-anchor="#hobbiesPics"
-          data-aos-anchor-placment="top-center"></div>
-      </div>
 
-      <p data-aos="fade-up" id="p2">
-        Besides my passion for programming, I love to play video games, specifically FPSs and strategy. I also love to travel,
-        hike, and run. On Thursday you can find me rock climbing or out for a nice long run. I often enjoy running "what if" simulations, wither that be hypothetical economic situations or to figure out the probability of winning Magic: the Gathering with a certain deck or strategy.
-      </p>
-    </div>
-  </div>
 
-  <div id="resume">
-    <div id="resumeTitle" data-aos="fade-up">
-      <h1>Resume</h1>
-    </div>
-    <div id="resumeMain" data-aos="fade-up">
-      <a id="resumeView" href="/assets/ChadRossResume.pdf" target="_blank">View Resume
-        <img src="/assets/viewfile.png" />
-      </a>
-      <a id="resumeDownload" href="/assets/ChadRossResume.pdf" download>Download Resume
-        <img src="/assets/download.png" />
-      </a>
-    </div>
-  </div>
+<!--  <div id="resume">-->
+<!--    <div id="resumeTitle" data-aos="fade-up">-->
+<!--      <h1>Resume</h1>-->
+<!--    </div>-->
+<!--    <div id="resumeMain" data-aos="fade-up">-->
+<!--      <a id="resumeView" href="/assets/ChadRossResume.pdf" target="_blank">View Resume-->
+<!--        <img src="/assets/viewfile.png" />-->
+<!--      </a>-->
+<!--      <a id="resumeDownload" href="/assets/ChadRossResume.pdf" download>Download Resume-->
+<!--        <img src="/assets/download.png" />-->
+<!--      </a>-->
+<!--    </div>-->
+<!--  </div>-->
 
   <div id="contact">
     <div id="contactTitle" data-aos="fade-up">
@@ -744,8 +777,8 @@
 <!--        </div>-->
 <!--      </form>-->
 
-      <div class="btn-box">
-        <a href = "mailto:chadrt21@gmail.com?subject=Contact through Portfolio Page">Message Me<img src="assets/paper-plane.png">
+      <div class="btn-box" data-aos="fade-up">
+        <a href = "mailto:chadrt21@gmail.com?subject=Contact through Portfolio Page">Email Me<img src="assets/paper-plane.png">
         </a>
         <a id="upworkView" href="https://www.upwork.com/freelancers/~01ecbf6e6ee2174aa6" target="_blank">Hire Me<img src="/assets/upwork.png" />
         </a>
