@@ -6,6 +6,8 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background: #1b1c1c;
+  color: white;
 }
 
 body {
@@ -23,7 +25,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background: white;
+  /*background: white;*/
+  background: #1b1c1c;
+  text-decoration-color: white;
   position: fixed;
   width: 100%;
   max-width: 100vw;
@@ -47,6 +51,7 @@ nav {
   position: relative;
   padding-bottom: 8px;
   padding-top: 8px;
+  color: white;
 }
 
 nav ul li {
@@ -84,7 +89,8 @@ nav ul li {
 }
 
 h1 {
-  color: #333333;
+  /*color: #333333;*/
+  color: white;
   font-size: 4rem;
   text-align: center;
 }
@@ -100,7 +106,8 @@ h1 {
 h2 {
   font-size: 4rem;
   font-weight: 700;
-  color: #333333;
+  /*color: #333333;*/
+  color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -108,14 +115,16 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333333;
+  /*color: #333333;*/
+  color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 
 #projectButton,
-#upworkMainButton {
+#upworkMainButton,
+#moreBlogButton {
   margin-top: 50px;
 }
 
@@ -128,7 +137,13 @@ h3 {
   gap: 5px;
 }
 
-#servicesDiv {
+#contact img,
+#servicesDiv img {
+  background: #3a3c3c;
+}
+
+#servicesDiv,
+#blogMain{
   /*display: flex;*/
   /*flex-direction: column;*/
   display: flex;
@@ -144,14 +159,17 @@ h3 {
 #resumeMain a,
 #contactMain a,
 #servicesDiv a,
+#moreBlogButton a,
 .btn-box button {
-  color: #333333;
+  /*color: #333333;*/
+  color: white;
   padding: 15px;
   font-size: 1.3rem;
   font-weight: bold;
   border: 4px solid #333333;
   /*border-radius: 50px;*/
-  background-color: white;
+  /*background-color: white;*/
+  background-color: #3a3c3c;
   transition: background-color 0.3s ease 0s;
 }
 
@@ -163,6 +181,7 @@ h3 {
 .btn-box a {
   font-size: 0.8rem;
   border: 2px solid #333333;
+  background-color: #3a3c3c;
   /*border-radius: 50px;*/
   margin-bottom: 0px;
   margin-top: 0px;
@@ -210,8 +229,13 @@ h3 {
 #servicesDiv a:hover,
 .btn:hover,
 .btn-box a:hover {
-  background-color: #fa9f30;
+  background: #fa9f30;
 }
+
+/*a:hover + img {*/
+/*  background: #fa9f30;*/
+/*}*/
+
 
 #upworkButton {
   display: flex;
@@ -230,6 +254,8 @@ h3 {
   position: relative;
   top: 4.5px;
   margin-left: 5px;
+  /*background: #3a3c3c;*/
+  background-color: #3a3c3c;
 }
 
 #resumeMain a img,
@@ -436,7 +462,8 @@ h3 {
 }
 
 p {
-  color: #333333;
+  /*color: #333333;*/
+  color: white;
   font-size: 1.2em;
   line-height: 1.6;
   padding: 20px;
@@ -537,10 +564,11 @@ p {
 }
 
 a {
-  color: #333333;
+  /*color: #333333;*/
+  color: white;
 }
 a:visited {
-  color: #333333;
+  /*color: #333333;*/
 }
 a:link {
   text-decoration: none;
@@ -675,13 +703,26 @@ button:hover {
 
 .techDiv {
   width: 320px;
+  min-height: 250px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin: 5px;
   border: 1px solid #333333;
-  margin: 6px;
+  /*background-color: #3a3c3c;*/
+}
+
+.CertDiv {
+  width: 100%;
+  /*min-height: 250px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+  border: 1px solid #333333;
+  /*background-color: #3a3c3c;*/
 }
 
 .tech {
@@ -694,6 +735,7 @@ button:hover {
 
 .techDivTitle {
   width: 100%;
+  max-height: 27px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 2px;
@@ -708,6 +750,7 @@ button:hover {
 .tech img {
   width: 64px;
   max-height: 70px;
+  /*background-color: #3a3c3c;*/
 }
 
 .tooltip {
@@ -990,6 +1033,7 @@ footer {
   align-items: center;
 }
 
+
 #copyright {
   margin-bottom: 20px;
 }
@@ -1108,7 +1152,8 @@ footer {
     height: 92vh;
     height: calc(100vh - 70px);
     top: 70px;
-    background-color: white;
+    /*background-color: white;*/
+    background-color: #1b1c1c;
     display: flex;
     flex-direction: column;
     align-items: center;
