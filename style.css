@@ -753,6 +753,13 @@ button:hover {
   /*background-color: #3a3c3c;*/
 }
 
+.logo img {
+  margin: 5px;
+  width: 136px;
+  max-height: 140px;
+  min-height: 120px;
+}
+
 .tooltip {
   position: relative;
 }
