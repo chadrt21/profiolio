@@ -21,3 +21,6 @@ to = "https://www.upwork.com/freelancers/~01ecbf6e6ee2174aa6"
 [[redirects]]
 from = "/Upwork"
 to = "https://www.upwork.com/freelancers/~01ecbf6e6ee2174aa6"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
