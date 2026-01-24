@@ -26,7 +26,7 @@ const projects: Project[] = [
     description: 'A comprehensive character management and planning system for Dungeon and Dragons campaigns.',
     tech: ['JavaScript', 'Next.js', 'NoSQL', 'Web Dev'],
     status: 'IN_DEVELOPMENT',
-    link: 'https://minmaxdnd.com/',
+    link: 'https://happy-shannon-ce2c5d.netlify.app/',
   },
   {
     id: 'project-tolbox',
