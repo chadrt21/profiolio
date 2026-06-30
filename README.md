@@ -67,10 +67,10 @@ A cyberpunk-themed developer portfolio with immersive 3D animations, interactive
 
 ```bash
 # Clone the repository
-git clone https://github.com/KD-3030/neural-terminal.git
+git clone https://github.com/chadrt21/profiolio.git
 
 # Navigate to project
-cd neural-terminal
+cd profiolio
 
 # Install dependencies
 npm install
@@ -126,9 +126,6 @@ The primary accent color is `#FF4500` (Orange Red). Modify in:
 - `tailwind.config.ts` for Tailwind classes
 - Component files for inline styles
 
-### Audio
-Replace `/public/Cornfield Chase - Hans Zimmer.mp3` with your preferred track.
-
 ### Content
 - Update project data in `ProjectsSection.tsx`
 - Modify skills in `SkillsSection.tsx`
@@ -150,7 +147,6 @@ npm start
 
 ## 🙏 Credits
 
-- **Audio**: Hans Zimmer - Cornfield Chase (Interstellar OST)
 - **Fonts**: Space Grotesk, JetBrains Mono
 - **3D Library**: [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
 
@@ -161,5 +157,5 @@ MIT License - feel free to use this for your own portfolio!
 ---
 
 <p align="center">
-  Built with ❤️ by <a href="https://github.com/KD-3030">Kinjal Dutta</a>
+  Built with ❤️ by <a href="https://github.com/chadrt21">Chad Ross</a>
 </p>
