@@ -16,8 +16,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Secured Terminal | Portfolio",
-  description: "A digital override into the system. Full Stack Engineer, AI Architect, Cybersecurity.",
-  keywords: ["portfolio", "software engineer", "full stack", "AI", "android", "developer", "cybersecurity"],
+  description: "A digital override into the system. Full Stack Engineer, AI Architect, IoT Specialist.",
+  keywords: ["portfolio", "software engineer", "full stack", "AI", "IT Technician", "developer","cybersecurity"],
   authors: [{ name: "Chad Ross" }],
   openGraph: {
     title: "Secured Terminal",

@@ -6,13 +6,8 @@ import { useStore } from '@/stores/useStore'
 
 const bootMessages = [
   { text: '> INITIALIZING  INTERFACE...', delay: 400 },
-  { text: '> MOUNTING_CORE_COMPONENTS... [OK]', delay: 200 },
-  { text: '> LOADING_SHADER_MODULES... [OK]', delay: 150 },
   { text: '> ESTABLISHING_SECURE_CONNECTION...', delay: 300 },
-  { text: '> BYPASSING_FIREWALL... [SUCCESS]', delay: 250 },
-  { text: '> DECRYPTING_ARCHIVES...', delay: 200 },
   { text: '> IDENTITY_VERIFIED: VISITOR', delay: 150 },
-  { text: '> ACCESS_LEVEL: CLASSIFIED', delay: 100 },
   { text: '> SECURED_LINK_ESTABLISHED', delay: 200 },
   { text: '', delay: 100 },
   { text: '> HELLO USER', delay: 300 },
@@ -351,7 +346,7 @@ export default function BootSequence() {
 
       {/* System info */}
       <div className="absolute bottom-6 md:bottom-8 right-6 md:right-8 text-[10px] md:text-xs text-[#333333] text-right">
-        <div>NEURAL_TERMINAL v1.0.0</div>
+        <div>SECURE_TERMINAL v1.2.0</div>
         <div>BUILD: {new Date().toISOString().split('T')[0]}</div>
         <div className="text-[#FF4500]/50">STATUS: {loadingProgress < 100 ? 'INITIALIZING' : 'READY'}</div>
       </div>

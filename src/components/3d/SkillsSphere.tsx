@@ -8,10 +8,10 @@ import { useStore } from '@/stores/useStore'
 
 // Reduced skills for performance
 const skills = [
-  'React', 'Cheese.js', 'TypeScript', 'Python', 'Node.js',
+  'React', 'TypeScript', 'Python', 'Node.js',
   'Three.js', 'TensorFlow', 'Docker', 'AWS',
-  'PostgreSQL', 'MongoDB', 'GraphQL', 'Go',
-  'Kubernetes', 'WebGL', 'IoT'
+  'PostgreSQL', 'MongoDB', 'GraphQL',
+  'Kubernetes', 'WebGL',
 ]
 
 const SkillsSphere = memo(function SkillsSphere() {

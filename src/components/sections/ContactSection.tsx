@@ -12,14 +12,20 @@ const contactLinks = [
   },
   {
     label: 'GITHUB_REPO',
-    command: 'ACCESS',
+    command: 'DEPLOY',
     href: 'https://github.com/chadrt21',
     icon: '⚡',
   },
   {
     label: 'LINKEDIN_LOGS',
-    command: 'ACCESS',
+    command: 'CONNECT',
     href: 'https://www.linkedin.com/in/chadtross',
+    icon: '🔗',
+  },,
+  {
+    label: 'TWEET_LOGS',
+    command: 'ACCESS',
+    href: 'https://www.X.com/chadrt21',
     icon: '🔗',
   }
   // {
@@ -61,10 +67,10 @@ export default function ContactSection() {
         response = 'A developer who believes code is poetry and architecture is art.'
         break
       case 'contact':
-        response = 'EMAIL: kinjaldutta005@gmail.com | GITHUB: @KD-3030'
+        response = 'EMAIL: chadrt21@gmail.com | GITHUB: @chadrt21'
         break
       case 'skills':
-        response = 'Loading skill database... [TypeScript, Python, React, AI, IoT, ...]'
+        response = 'Loading skill database... [TypeScript, Python, React, AI, ...]'
         break
       case 'clear':
         setTerminalHistory([])
@@ -78,7 +84,7 @@ export default function ContactSection() {
         break
       case 'hello':
       case 'hi':
-        response = 'Hello, visitor. Welcome to the Neural Terminal.'
+        response = 'Hello, visitor. Welcome to the Secure Terminal.'
         break
       default:
         response = `Command not recognized: "${input}". Type "help" for available commands.`
@@ -97,7 +103,7 @@ export default function ContactSection() {
       <div className="relative max-w-4xl mx-auto text-center z-10">
         {/* Section header */}
         <div className="text-[#FF4500] text-[10px] sm:text-xs font-mono mb-3 sm:mb-4 tracking-widest">
-          [ PHASE_04: ESTABLISH_LINK ]
+          [ PHASE_05: ESTABLISH_LINK ]
         </div>
         
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8">
@@ -159,7 +165,7 @@ export default function ContactSection() {
             >
               {/* Welcome message */}
               <div className="text-[#666666] mb-3 sm:mb-4">
-                <div>Neural Terminal v1.0.0</div>
+                <div>Secure Terminal v1.2.0</div>
                 <div>Type &quot;help&quot; for available commands.</div>
               </div>
 
@@ -192,10 +198,10 @@ export default function ContactSection() {
       </div>
 
       {/* Footer */}
-      <footer className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 text-[#333333] font-mono text-[10px] sm:text-xs">
+      <footer className="absolute bottom-0 left-0 right-0 p-4 sm:p-6" id={'contactSection'}>
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 text-[#666666] font-mono text-[10px] sm:text-xs">
           <div className="text-center md:text-left">
-            SYSTEM VERSION 1.0 // BUILT BY <span className="text-[#FF4500]">Chad Ross</span>
+            SYSTEM VERSION 1.2 // BUILT BY <span className="text-[#FF4500]">Chad Ross</span>
           </div>
           <div className="flex items-center gap-2 sm:gap-4">
             <span className="hidden sm:inline">{currentTime}</span>

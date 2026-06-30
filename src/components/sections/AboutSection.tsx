@@ -8,13 +8,14 @@ export default function AboutSection() {
 
   const highlights = [
     { word: 'Full Stack', description: 'End-to-end system architecture' },
-    { word: 'AI', description: 'Machine learning & computer vision' },
+    { word: 'IT', description: 'Hardware & System Troubleshooting' },
     { word: 'InfoSec', description: 'Secure & vigilant infrastructure' },
   ]
 
   return (
     <section
       ref={sectionRef}
+      id={'aboutSection'}
       className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 sm:py-32"
     >
       {/* Dark overlay for content visibility */}
@@ -43,8 +44,8 @@ export default function AboutSection() {
           </div>
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6 sm:mb-8">
-            <GlitchTextCSS className="block mb-1 sm:mb-2">SECURING</GlitchTextCSS>
-            <GlitchTextCSS className="block mb-1 sm:mb-2">THE</GlitchTextCSS>
+            <GlitchTextCSS className="block mb-1 sm:mb-2">SECURING_</GlitchTextCSS>
+            <GlitchTextCSS className="block mb-1 sm:mb-2">THE_</GlitchTextCSS>
             <span className="text-[#FF4500]">
               <GlitchTextCSS>FUTURE</GlitchTextCSS>
             </span>
@@ -61,7 +62,7 @@ export default function AboutSection() {
                 <span className="text-white font-mono text-xs sm:text-sm group-hover:text-[#FF4500] transition-colors">
                   <GlitchText>{item.word}</GlitchText>
                 </span>
-                <span className="text-[#333333] text-[10px] sm:text-xs font-mono hidden sm:inline">
+                <span className="text-[#666666] text-[10px] sm:text-xs font-mono hidden sm:inline">
                   // {item.description}
                 </span>
               </div>
@@ -90,21 +91,21 @@ export default function AboutSection() {
               
               <div className="text-[#E0E0E0] leading-relaxed space-y-3 sm:space-y-4">
                 <p>
-                  I&apos;m an <span className="text-[#FF4500]">software engineer</span> with over
-                  7 years of experience designing, maintaining applications and infrastructure.
-                  I specialize in building <span className="text-[#FF4500]">intelligent systems</span> that advance
-                  businesses with secure easy of mind.
+                  <span className="text-[#FF4500]">Software engineer</span>,
+                  <span className="text-[#FF4500]"> IT technician</span>, and
+                  <span className="text-[#FF4500]"> cybersecurity researcher</span>. I specialize in building
+                  high-performance web applications, managing secure IT operations, and analyzing infrastructure
+                  vulnerabilities.
                 </p>
-                
+
                 <p>
-                  From crafting <span className="text-[#FF4500]">AI-powered applications</span> to 
-                  engineering <span className="text-[#FF4500]">mobile ecosystems</span>, I approach
-                  every project with the mindset of an architect—obsessing over both the foundation 
-                  and the finish.
+                  My unique blend of hands-on hardware<span className="text-[#FF4500]"> troubleshooting</span>, development, and defense
+                  allows me to build digital<span className="text-[#FF4500]"> solutions</span> that are both
+                  highly functional and structurally<span className="text-[#FF4500]"> secure</span>.
                 </p>
                 
                 <p className="text-[#666666]">
-                  Making the world secure, one commit at a time.
+                  Improving the world, one solution at a time.
                 </p>
               </div>
 

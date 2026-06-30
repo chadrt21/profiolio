@@ -5,12 +5,16 @@ import GlitchText from '../ui/GlitchText'
 import { useStore } from '@/stores/useStore'
 
 const skills = [
-  { category: 'LANGUAGES', items: ['JavaScript', 'Python', 'SQL', 'Bash (Shell)', 'C/C++','Kotlin','Java'] },
-  { category: 'FRONTEND', items: ['Next.js', 'React', 'HTML/CSS3', 'Shadcn UI', 'Tailwind', 'Three.js','DOM Manipulation'] },
+  { category: 'LANGUAGES', items: ['JavaScript', 'TypeScript', 'Python', 'SQL', 'Bash', 'C/C++','Kotlin','Java'] },
+  { category: 'FRONTEND', items: ['Next.js', 'React', 'HTML/CSS3', 'Shadcn UI', 'TailwindCSS', 'DOM Manipulation'] },
   { category: 'BACKEND', items: ['Node.js', 'websockets', 'REST APIs', 'Express', 'GraphQL', 'Fast API', 'MongoDB', 'PostgreSQL'] },
   { category: 'AI/ML', items: ['Pytorch', 'CNNs & LSTMs', 'Computer Vision', 'Neural Networks', 'Pandas', 'Model Training'] },
-  { category: 'TOOLS & OS', items: ['Linux', 'Git/GitHub', 'Jetbrains', 'Github Actions', 'Postman', 'Docker','Podman','Kubernetes','VPS','AWS'] },
+  { category: 'TOOLS & OS', items: ['Linux', 'Windows', 'Git/GitHub', 'Jetbrains', 'Postman', 'Docker/Podman', 'Kubernetes'] },
   { category: 'SYSTEM DESIGN', items: ['Scalability', 'Load Balancing', 'Microservices', 'Caching', 'Database Sharding', 'High Availability'] },
+]
+
+const certs = [
+    { category: 'COMPTIA', items: ['A+', 'Network+','Security+','Secure Infrastructure Specialist','IT Operations Specialist'] },
 ]
 
 export default function SkillsSection() {
@@ -19,7 +23,7 @@ export default function SkillsSection() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen py-20 sm:py-32 px-4 sm:px-6">
+    <section ref={sectionRef} id={'skillSection'} className="relative min-h-screen py-20 sm:py-32 px-4 sm:px-6">
       {/* Dark overlay for content visibility */}
       <div className="absolute inset-0 bg-[#050505]/80 pointer-events-none" />
       
@@ -34,15 +38,15 @@ export default function SkillsSection() {
       </div>
 
       {/* Section header */}
-      <div className="max-w-6xl mx-auto mb-12 sm:mb-20 text-center relative z-10">
+      <div className="max-w-6xl mx-auto mb-10 sm:mb-10 text-center relative z-10">
         <div className="text-[#FF4500] text-[10px] sm:text-xs font-mono mb-3 sm:mb-4 tracking-widest">
-          [ PHASE_03: THE_ARSENAL ]
+          [ PHASE_04: THE_ARSENAL ]
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-3 sm:mb-4">
           <GlitchText>TECH STACK</GlitchText>
         </h2>
-        <p className="text-[#888888] font-mono text-xs sm:text-sm max-w-xl mx-auto px-4">
-          Weapons of choice for digital warfare. Each tool mastered, each framework conquered.
+        <p className="text-[#666666] font-mono text-xs sm:text-sm max-w-xl mx-auto px-4">
+          Weapons of choice for digital craftsmanship and warfare. Each tool mastered, each framework conquered.
         </p>
       </div>
 
@@ -59,6 +63,32 @@ export default function SkillsSection() {
             onSkillHover={(skill) => setHoveringSkill(skill)}
             onSkillLeave={() => setHoveringSkill(null)}
           />
+        ))}
+      </div>
+
+      {/* Certs grid */}
+      <div className="max-w-6xl mx-auto mb-10 sm:mb-10 text-center relative z-10">
+        <div className="text-[#FF4500] text-[10px] sm:text-xs font-mono mb-3 sm:mb-4 tracking-widest">
+        </div>
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-3 sm:mb-4">
+          <GlitchText>CERTS</GlitchText>
+        </h2>
+        <p className="text-[#666666] font-mono text-xs sm:text-sm max-w-xl mx-auto px-4">
+          Certifications, trainings, and rites of passage.
+        </p>
+      </div>
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-4 sm:gap-6 lg:gap-8 relative z-10">
+        {certs.map((category) => (
+            <SkillCategory
+                key={category.category}
+                category={category}
+                isActive={activeCategory === category.category}
+                hoveredSkill={isHoveringSkill}
+                onCategoryHover={() => setActiveCategory(category.category)}
+                onCategoryLeave={() => setActiveCategory(null)}
+                onSkillHover={(skill) => setHoveringSkill(skill)}
+                onSkillLeave={() => setHoveringSkill(null)}
+            />
         ))}
       </div>
 
@@ -109,7 +139,7 @@ function SkillCategory({
       <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
         <div className={`
           w-1.5 sm:w-2 h-1.5 sm:h-2 transition-colors
-          ${isActive ? 'bg-[#FF4500]' : 'bg-[#333333]'}
+          ${isActive ? 'bg-[#FF4500]' : 'bg-[#666666]'}
         `} />
         <h3 className={`
           font-mono text-[10px] sm:text-xs tracking-widest transition-colors
@@ -130,8 +160,8 @@ function SkillCategory({
               ${hoveredSkill === skill
                 ? 'border-[#FF4500] bg-[#FF4500]/10 text-[#FF4500] scale-105'
                 : isActive
-                  ? 'border-[#333333] text-[#E0E0E0] hover:border-[#FF4500]/50 hover:text-[#FF4500]'
-                  : 'border-[#1a1a1a] text-[#666666] hover:border-[#333333]'}
+                  ? 'border-[#666666] text-[#E0E0E0] hover:border-[#FF4500]/50 hover:text-[#FF4500]'
+                  : 'border-[#1a1a1a] text-[#666666] hover:border-[#666666]'}
             `}
             onMouseEnter={() => onSkillHover(skill)}
             onMouseLeave={onSkillLeave}

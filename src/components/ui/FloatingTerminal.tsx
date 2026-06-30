@@ -72,12 +72,12 @@ export default function FloatingTerminal() {
   exit     - Close terminal`
         break
       case 'about':
-        response = 'A developer who believes code is poetry and architecture is art. Building secure interfaces in the digital age.'
+        response = 'A developer who believes code is poetry and architecture is art. Building secure interfaces for the digital age.'
         break
       case 'contact':
-        response = `EMAIL: chadrt21@gmail.com
-GITHUB: github.com/chadrt21
-LINKEDIN: linkedin.com/in/chadtross`
+        response = `EMAIL: kinjaldutta005@gmail.com
+GITHUB: github.com/KD-3030
+LINKEDIN: linkedin.com/in/kinjal-dutta-16975928b`
         break
       case 'skills':
         response = `[LOADING SKILL DATABASE...]
@@ -90,9 +90,9 @@ LINKEDIN: linkedin.com/in/chadtross`
         break
       case 'projects':
         response = `[ACCESSING PROJECT ARCHIVES...]
-├── Secured Terminal - This portfolio
-├── TOLBOX - Autonomous diagnostics tool
-├── TASS - Management for IT departments 
+├── Neural Terminal - This portfolio
+├── AI Agent Systems - Autonomous agents
+├── IoT Dashboards - Real-time monitoring
 └── Type "scroll" to navigate to projects`
         break
       case 'scroll':
@@ -125,7 +125,7 @@ LINKEDIN: linkedin.com/in/chadtross`
       case 'hello':
       case 'hi':
       case 'hey':
-        response = 'Hello, visitor. Welcome to the Secured Terminal. Type "help" for commands.'
+        response = 'Hello, visitor. Welcome to the Neural Terminal. Type "help" for commands.'
         break
       case 'theme':
         response = 'Theme switching coming in v2.0...'
@@ -214,7 +214,7 @@ LINKEDIN: linkedin.com/in/chadtross`
             </div>
             <span className="text-[#666] text-[10px] sm:text-xs font-mono flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#FF4500] animate-pulse" />
-              secured_terminal.exe
+              secure_terminal.exe
             </span>
             <div className="w-12" /> {/* Spacer for symmetry */}
           </div>
@@ -229,7 +229,7 @@ LINKEDIN: linkedin.com/in/chadtross`
               {/* Welcome message */}
               <div className="text-[#666666] mb-4">
                 <div className="text-[#FF4500]">╔══════════════════════════════════════╗</div>
-                <div className="text-[#FF4500]">║  <span className="text-white">SECURED TERMINAL</span> <span className="text-[#666]">v1.0.0</span>          ║</div>
+                <div className="text-[#FF4500]">║  <span className="text-white">SECURE TERMINAL</span> <span className="text-[#666]">v1.2.0</span>          ║</div>
                 <div className="text-[#FF4500]">╚══════════════════════════════════════╝</div>
                 <div className="mt-2 text-[#888]">Type &quot;help&quot; for available commands.</div>
                 <div className="text-[#444]">Press Esc or type &quot;exit&quot; to close.</div>

@@ -19,26 +19,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 'project-minmax',
-    title: 'MINMAX_DND',
-    mode: 'inventory_system',
-    modeLabel: 'IMAGINARY_LOGISTICS',
-    description: 'A comprehensive character management and planning system for Dungeon and Dragons campaigns.',
-    tech: ['JavaScript', 'Next.js', 'NoSQL', 'Web Dev'],
-    status: 'IN_DEVELOPMENT',
-    link: 'https://happy-shannon-ce2c5d.netlify.app/',
-  },
-  {
-    id: 'project-tolbox',
-    title: 'TOLBOX',
-    mode: 'Computer_ai',
-    modeLabel: 'DIAGNOSTICS_LOGISTICS',
-    description: 'TOLBOX is an automated portable USB program that speeds up diagnostics, maintenance, and security on computers.',
-    tech: ['C#'],
-    status: 'IN_DEVELOPMENT',
-    link: 'https://github.com/chadrt21/tolbox',
-  },
-  {
     id: 'project-tass',
     title: 'TASS',
     mode: 'Computer_vision_ai',
@@ -59,15 +39,36 @@ const projects: Project[] = [
     link: 'https://github.com/chadrt21/Opt-Time',
   },
   {
-    id: 'project-campaignbuddy',
-    title: 'CAMPAIGN_BUDDY',
-    mode: 'imaginary',
-    modeLabel: 'IMAGINARY_INVENTORY',
-    description: 'Management system for Dungeons and Dragons Game Masters to plan, track, and develop their campaigns.',
-    tech: ['JavaScript','Node.js', 'SQL'],
-    status: 'PROTOTYPE',
-    link: 'https://github.com/chadrt21/dnd-webMaster',
-  }
+    id: 'project-minmax',
+    title: 'MINMAX_DND',
+    mode: 'inventory_system',
+    modeLabel: 'IMAGINARY_LOGISTICS',
+    description: 'A comprehensive character management and planning system for Dungeon and Dragons campaigns.',
+    tech: ['JavaScript', 'Next.js', 'NoSQL', 'Web Dev'],
+    status: 'IN_DEVELOPMENT',
+    link: 'https://minmaxdnd.com/',
+  },
+  // {
+  //   id: 'project-tolbox',
+  //   title: 'TOLBOX',
+  //   mode: 'Computer_ai',
+  //   modeLabel: 'DIAGNOSTICS_LOGISTICS',
+  //   description: 'TOLBOX is an automated portable USB program that speeds up diagnostics, maintenance, and security on computers.',
+  //   tech: ['C#'],
+  //   status: 'IN_DEVELOPMENT',
+  //   link: 'https://github.com/chadrt21/tolbox',
+  // },
+
+  // {
+  //   id: 'project-campaignbuddy',
+  //   title: 'CAMPAIGN_BUDDY',
+  //   mode: 'imaginary',
+  //   modeLabel: 'IMAGINARY_INVENTORY',
+  //   description: 'Management system for Dungeons and Dragons Game Masters to plan, track, and develop their campaigns.',
+  //   tech: ['JavaScript','Node.js', 'SQL'],
+  //   status: 'PROTOTYPE',
+  //   link: 'https://github.com/chadrt21/dnd-webMaster',
+  // }
 ]
 
 export default function ProjectsSection() {
@@ -79,14 +80,14 @@ export default function ProjectsSection() {
   }
 
   return (
-    <section className="relative min-h-screen py-20 sm:py-32 px-4 sm:px-6">
+    <section className="relative min-h-screen py-20 sm:py-32 px-4 sm:px-6" id={'projectSection'}>
       {/* Dark overlay for content visibility */}
       <div className="absolute inset-0 bg-[#050505]/85 pointer-events-none" />
       
       {/* Section header */}
       <div className="max-w-6xl mx-auto mb-12 sm:mb-20 relative z-10">
         <div className="text-[#FF4500] text-[10px] sm:text-xs font-mono mb-3 sm:mb-4 tracking-widest">
-          [ PHASE_02: THE_ARCHIVES ]
+          [ PHASE_03: THE_ARCHIVES ]
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white">
           <GlitchText>CLASSIFIED PROJECTS</GlitchText>

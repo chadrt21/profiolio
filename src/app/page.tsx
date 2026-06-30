@@ -10,6 +10,7 @@ import BackgroundAudio from '@/components/ui/BackgroundAudio'
 import SmoothScrollProvider from '@/components/providers/SmoothScrollProvider'
 import HeroSection from '@/components/sections/HeroSection'
 import AboutSection from '@/components/sections/AboutSection'
+import DocSection from '@/components/sections/DocsSection'
 import ProjectsSection from '@/components/sections/ProjectsSection'
 import SkillsSection from '@/components/sections/SkillsSection'
 import ContactSection from '@/components/sections/ContactSection'
@@ -57,8 +58,8 @@ export default function Home() {
               {/* Phase 1: About */}
               <AboutSection />
 
-              {/*/!* Phase 2: Docs *!/*/}
-              {/*<DocsSection />*/}
+              {/*Phase 2: Docs */}
+              {/*<DocSection />*/}
 
               {/* Phase 3: Projects */}
               <ProjectsSection />

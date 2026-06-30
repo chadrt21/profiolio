@@ -1,11 +1,12 @@
-# 🧠 Secured Terminal
+# 🧠 Secure Terminal
 
 A cyberpunk-themed developer portfolio with immersive 3D animations, interactive terminal, and cinematic audio experience. Built with Next.js 14, Three.js, and React Three Fiber.
 
-![Secured Terminal](https://img.shields.io/badge/version-1.0.0-FF4500?style=flat-square)
+![Neural Terminal](https://img.shields.io/badge/version-1.2.0-FF4500?style=flat-square)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
 ![Three.js](https://img.shields.io/badge/Three.js-r158-black?style=flat-square&logo=three.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f9155884-dce2-4199-828f-9d1cd274ce45/deploy-status)](https://app.netlify.com/projects/wonderful-turing-0e8579/deploys)
 
 ## ✨ Features
 
@@ -32,15 +33,11 @@ A cyberpunk-themed developer portfolio with immersive 3D animations, interactive
 - Easter egg commands (`matrix`, `sudo`, `whoami`)
 - Minimizable window with macOS-style controls
 
-[//]: # (### 🎵 Background Audio)
-
-[//]: # (- Ambient soundtrack &#40;Hans Zimmer - Cornfield Chase&#41;)
-
-[//]: # (- Auto-plays when hero section loads)
-
-[//]: # (- Smooth fade-in/fade-out transitions)
-
-[//]: # (- Toggle control in navigation)
+### 🎵 Background Audio
+- Ambient soundtrack (Hans Zimmer - Cornfield Chase)
+- Auto-plays when hero section loads
+- Smooth fade-in/fade-out transitions
+- Toggle control in navigation
 
 ### 📱 Fully Responsive
 - Mobile-first design approach
@@ -129,9 +126,8 @@ The primary accent color is `#FF4500` (Orange Red). Modify in:
 - `tailwind.config.ts` for Tailwind classes
 - Component files for inline styles
 
-[//]: # (### Audio)
-
-[//]: # (Replace `/public/Cornfield Chase - Hans Zimmer.mp3` with your preferred track.)
+### Audio
+Replace `/public/Cornfield Chase - Hans Zimmer.mp3` with your preferred track.
 
 ### Content
 - Update project data in `ProjectsSection.tsx`
@@ -154,7 +150,7 @@ npm start
 
 ## 🙏 Credits
 
-[//]: # (- **Audio**: Hans Zimmer - Cornfield Chase &#40;Interstellar OST&#41;)
+- **Audio**: Hans Zimmer - Cornfield Chase (Interstellar OST)
 - **Fonts**: Space Grotesk, JetBrains Mono
 - **3D Library**: [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
 
@@ -165,5 +161,5 @@ MIT License - feel free to use this for your own portfolio!
 ---
 
 <p align="center">
-  Built with ❤️ by <a href="https://github.com/chadrt21">Chad Ross</a>
+  Built with ❤️ by <a href="https://github.com/KD-3030">Kinjal Dutta</a>
 </p>

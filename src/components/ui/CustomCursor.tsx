@@ -22,10 +22,10 @@ export default function CustomCursor({ enabled = true }: CustomCursorProps) {
   // Detect if device supports hover (desktop)
   const [isTouchDevice, setIsTouchDevice] = useState(true)
 
-  // TODO detect screen-size (mobile) instead of touch to resolve diapered cursor
   useEffect(() => {
     setIsTouchDevice(
-      'ontouchstart' in window || navigator.maxTouchPoints > 0
+      // 'ontouchstart' in window || navigator.maxTouchPoints > 0
+      !(window.matchMedia('(hover: hover)').matches)
     )
   }, [])
 

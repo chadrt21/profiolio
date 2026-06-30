@@ -23,6 +23,7 @@ export default function HeroSection() {
   return (
     <section
       ref={containerRef}
+      id={'heroSection'}
       className="relative min-h-screen flex flex-col justify-center items-center px-6"
     >
       {/* Dark overlay for content visibility */}
@@ -49,12 +50,12 @@ export default function HeroSection() {
         {/* Subtitle */}
         <p className="text-sm sm:text-lg md:text-xl text-[#999999] font-mono mb-4 sm:mb-8 max-w-xl mx-auto leading-relaxed">
           <span className="text-[#FF4500]">FULL_STACK</span> DEVELOPER<span className="hidden sm:inline">{" // "}</span><br className="sm:hidden" />
-          <span className="text-[#FF4500]"> AI</span> ENGINEER<span className="hidden sm:inline">{" // "}</span><br className="sm:hidden" />
+          <span className="text-[#FF4500]"> IT</span> TECHNICIAN<span className="hidden sm:inline">{" // "}</span><br className="sm:hidden" />
           <span className="text-[#FF4500]"> CYBERSECURITY</span> RESEARCHER
         </p>
 
         {/* Tagline */}
-        <div className="text-[#666666] font-mono text-xs sm:text-sm tracking-wider sm:tracking-widest">
+        <div className="text-[#777777] font-mono text-xs sm:text-sm tracking-wider sm:tracking-widest">
           YOUR EASY OF MIND IS HERE
         </div>
       </div>
@@ -73,7 +74,7 @@ export default function HeroSection() {
       {/* Side decorations - hidden on mobile */}
       <div className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 hidden lg:block z-10">
         <div className="text-[#555555] text-xs font-mono writing-vertical transform -rotate-180" style={{ writingMode: 'vertical-rl' }}>
-          SECURED_INTERFACE_v1.0
+          SECURE_INTERFACE_v1.2
         </div>
       </div>
       

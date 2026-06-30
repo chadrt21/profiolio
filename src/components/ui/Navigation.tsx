@@ -8,22 +8,41 @@ export default function Navigation() {
   const { scrollProgress, audioEnabled, toggleAudio } = useStore()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  // TODO add LOGS section (for blogs)
   const navItems = [
-    { label: 'CORE', progress: 0 },
-    { label: 'ABOUT', progress: 0.15 },
-    { label: 'PROJECTS', progress: 0.43 },
-    { label: 'ARSENAL', progress: 0.72 },
-    { label: 'LINK', progress: 0.86 },
+    { label: 'CORE', id: 'heroSection' },
+    { label: 'ABOUT', id: 'aboutSection' },
+    // { label: 'LOGS', id: 'docsSection' },
+    { label: 'PROJECTS', id: 'projectSection' },
+    { label: 'ARSENAL', id: 'skillSection' },
+    { label: 'LINK', id: 'contactSection' },
   ]
 
-  const scrollToSection = (progress: number) => {
-    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight
-    window.scrollTo({
-      top: scrollHeight * progress,
-      behavior: 'smooth'
-    })
-    setMobileMenuOpen(false)
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', // Aligns the top of the element to the top of the viewport
+      });
+    }
+    setMobileMenuOpen(false);
+  }
+
+  const activeSection = () => {
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('id')
+      let activeId = ''
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        // Check if the top of the section is near the top of the viewport
+        if (rect.top <= 150 && rect.bottom >= 150) {
+          activeId = section.id;
+        }
+      });
+      console.log(activeId);
+      return activeId != '' ? activeId.toString() : '';
+    });
   }
 
   return (
@@ -41,10 +60,10 @@ export default function Navigation() {
           {navItems.map((item) => (
             <button
               key={item.label}
-              onClick={() => scrollToSection(item.progress)}
+              onClick={() => scrollToSection(item.id)}
               className={`
                 text-xs font-mono tracking-wider transition-all duration-300
-                ${Math.abs(scrollProgress - item.progress) < 0.1 
+                ${(activeSection as unknown) == item.id 
                   ? 'text-[#FF4500]' 
                   : 'text-[#888] hover:text-[#E0E0E0]'}
               `}
@@ -140,10 +159,10 @@ export default function Navigation() {
           {navItems.map((item, index) => (
             <button
               key={item.label}
-              onClick={() => scrollToSection(item.progress)}
+              onClick={() => scrollToSection(item.id)}
               className={`
                 text-2xl font-mono tracking-widest transition-all duration-300
-                ${Math.abs(scrollProgress - item.progress) < 0.1 
+                ${(activeSection as unknown) === item.id 
                   ? 'text-[#FF4500]' 
                   : 'text-white/70'}
               `}
