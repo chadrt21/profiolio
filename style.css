@@ -507,6 +507,12 @@ p {
 }
 
 .projectTitle {
+  
+  padding-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+.sectionTitle {
   padding-bottom: 15px;
   font-size: 2.5rem;
 }
