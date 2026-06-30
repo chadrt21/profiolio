@@ -21,7 +21,7 @@ const contactLinks = [
     command: 'CONNECT',
     href: 'https://www.linkedin.com/in/chadtross',
     icon: '🔗',
-  },,
+  },
   {
     label: 'TWEET_LOGS',
     command: 'ACCESS',
@@ -31,7 +31,7 @@ const contactLinks = [
   // {
   //   label: 'SOCIAL_LINKS',
   //   command: 'ACCESS',
-  //   href: 'https://www.instagram.com/strucker30/',
+  //   href: 'https://www.instagram.com/',
   //   icon: '🌐',
   // }
 ]
