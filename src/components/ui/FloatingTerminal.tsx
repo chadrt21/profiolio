@@ -75,9 +75,9 @@ export default function FloatingTerminal() {
         response = 'A developer who believes code is poetry and architecture is art. Building secure interfaces for the digital age.'
         break
       case 'contact':
-        response = `EMAIL: kinjaldutta005@gmail.com
-GITHUB: github.com/KD-3030
-LINKEDIN: linkedin.com/in/kinjal-dutta-16975928b`
+        response = `EMAIL: chadrt21@gmail.com
+GITHUB: github.com/chadrt21
+LINKEDIN: linkedin.com/in/chadtross`
         break
       case 'skills':
         response = `[LOADING SKILL DATABASE...]
@@ -90,9 +90,9 @@ LINKEDIN: linkedin.com/in/kinjal-dutta-16975928b`
         break
       case 'projects':
         response = `[ACCESSING PROJECT ARCHIVES...]
-├── Neural Terminal - This portfolio
-├── AI Agent Systems - Autonomous agents
-├── IoT Dashboards - Real-time monitoring
+├── Secure Terminal - This portfolio
+├── TASS - Autonomous agents
+├── MINMAXDND - Dungeons and Dragons Character Planner
 └── Type "scroll" to navigate to projects`
         break
       case 'scroll':
@@ -125,7 +125,7 @@ LINKEDIN: linkedin.com/in/kinjal-dutta-16975928b`
       case 'hello':
       case 'hi':
       case 'hey':
-        response = 'Hello, visitor. Welcome to the Neural Terminal. Type "help" for commands.'
+        response = 'Hello, visitor. Welcome to the Secure Terminal. Type "help" for commands.'
         break
       case 'theme':
         response = 'Theme switching coming in v2.0...'
